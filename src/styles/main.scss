@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+
+$h3-bg-color: blue;
+
+h3 {
+    background-color: $h3-bg-color;
+    user-select: none;
+}
