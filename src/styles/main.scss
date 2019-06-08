@@ -1,8 +1,92 @@
-@import "~bootstrap/scss/bootstrap";
+$border-style: 1px solid gray;
 
-$h3-bg-color: blue;
+.container {
+    border: $border-style;
+    margin: auto;
 
-h3 {
-    background-color: $h3-bg-color;
-    user-select: none;
+    .top {
+        border-bottom: $border-style;
+        padding: 10px;
+        clear: both;
+
+        .heading {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold; 
+        }
+
+        .city-filter {
+            float: right;
+        }
+    }
+
+    .middle {
+        padding: 10px;
+        border-bottom: $border-style;
+
+        .description {
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .filter-area {
+            text-align: center;
+            padding: center;
+            padding: 10px;
+
+            .filter {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .bottom {
+        padding: 10px 0;
+        clear: both;
+        height: 300px;
+
+        .sort-area {
+            padding: 0 10px;
+            height: 20px;
+
+            .sort-button {
+                float: right;
+                margin-left: 10px;
+            }
+        }
+
+        .info-tile {
+            border: $border-style;
+            margin: 10px;
+            clear: both;
+
+            .info-tile-top {
+                .image {
+                    width: 10%;  
+                    display: inline-block;
+                }
+                .info-description {
+                    width: 60%;
+                    display: inline-block;
+                }
+                .book-area {
+                    width: 20%;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            .info-tile-bottom {
+                padding: 10px;
+                .slot-badge {
+                    height: 20px;
+                    padding: 5px;
+                    margin-right: 10px;
+                    background-color: gray;
+                    display: inline-block;
+                    border: 1px solid black;
+                }
+            }            
+        }
+    }
 }

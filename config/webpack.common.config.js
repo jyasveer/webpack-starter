@@ -12,7 +12,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Webpack 4 Starter',
+            title: 'Doctor Appointment',
             template: './src/index.html',
             inject: true,
             minify: {
@@ -24,8 +24,8 @@ module.exports = {
             filename: 'style.[chunkhash].css'
         }),
         new CopyWebpackPlugin([{
-            from: './src/assets/images',
-            to: 'assets/images'
+            from: './src/assets',
+            to: 'assets'
         }])
     ],
     module: {

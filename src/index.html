@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> <%= htmlWebpackPlugin.options.title %> </title>
-    <meta name="viewport" content="width=device-width,initial- scale=1"> 
+    <meta name="viewport" content="width=device-width,initial- scale=1">
 </head>
+
 <body>
-    <div class="row">
-        <div class="col-sm-6">
-            <h3>Welcome to Webpack 4 starter </h3>
+    <div class="container">
+        <div class="top">
+            <div class="heading">
+                Book my Doctor
+            </div>
+            <select name="city" id="city" id="city-filter" class="city-filter">
+                <option value="select">Select City</option>
+            </select>
         </div>
-        <div class="col-sm-6">
-            <h3>Welcome to Webpack 4 starter </h3>
+        <div class="middle">
+            <div class="description">
+                <div class="line-1">
+                    Medical Appointments
+                </div>
+                <div class="line-2">
+                    MADE EASY
+                </div>
+                <div class="filter-area">
+                    <select name="locality" id="locality" class="filter">
+                        <option value="HSR">HSR</option>
+                    </select>
+                    <select name="slot" id="slot" class="filter">
+                        <option value="morning">Morning</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="sort-area">
+                <button class="sort-button">price: high - low</button>
+                <button class="sort-button">price: low - high</button>
+            </div>
+            <div class="info-tile">
+                <div class="info-tile-top">
+                    <div class="image"></div>
+                    <div class="info-description">
+                        <div>
+                            Name:
+                            <span class="name-value">ABC</span>
+                        </div>
+                        <div>
+                            Address:
+                            <span class="address-value">HSR</span>
+                        </div>
+                        <div>
+                            Rating:
+                            <span class="rating-value">4</span>
+                        </div>
+                    </div>
+                    <div class="book-area">
+                        Rs <span class="price-value">400</span>
+                        <button class="book-now">Book Now</button>
+                    </div>
+                </div>
+                <div class="info-tile-bottom">
+                    <div class="slot-badge">Morning</div>
+                    <div class="slot-badge">Afternoon</div>
+                </div>
+            </div>
         </div>
     </div>
-    <img id="webpack-gif" alt="webpack-gif" src="assets/images/webpack.gif">
+
 </html>
